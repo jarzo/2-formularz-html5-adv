@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>2-formularz-html5-adv</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<form action="https://formspree.io/nebraska994@gmail.com" method="post" autocomplete="on">
+
+		<fieldset id="klient">
+			<legend>Customer Info</legend>
+
+			<lebel for="name">Name:</lebel>
+			<input type="text" name="name" id="name" placeholder="Enter your name" autofocus required/><br/><br/>
+
+			<label for="telephone">Telephone:</label>
+			<input type="tel" name="tel" id="tel" placeholder="1-234-567-8910" required/><br/><br/>
+
+			<label for="e-mail">E-mail address:</label>
+			<input type="email" name="email" id="email" placeholder="Enter your email address" required/>
+
+		</fieldset>
+		
+		<fieldset id="ksiazki">
+			<legend>Books</legend>
+
+			<input list="books" name="books">
+			<datalist id="books">
+    			<option value="Harry Potter i Kamień Filozoficzny">
+    			<option value="Harry Potter i Komnata Tajemnic">
+   				<option value="Harry Potter i Więzień Azkabanu">
+    			<option value="Harry Potter i Czara Ognia">
+    			<option value="Harry Potter i Zakon Feniksa">
+    			<option value="Harry Potter i Książe Półkrwi">
+    			<option value="Harry Potter i Insygnia Śmierci">
+  			</datalist>
+				<label for="quantity">Quantity(Maximum 5):</label>
+				<input type="number" name="quantity" min="1" max="5">
+		</fieldset><br/>
+		<input type="submit" value="Sumbit">
+	</form>
+
+</body>
+
+</html>

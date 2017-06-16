@@ -1,0 +1,45 @@
+*{
+	margin:0;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #000;
+}
+form{
+	width: 50%;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+}
+
+fieldset{
+	color: chartreuse;
+	border: 1px chartreuse solid;
+}
+
+::-webkit-input-placeholder{
+	color:#000;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"]
+
+ 
+{
+	background-color: chartreuse;
+	color: #000;
+	border: 1px solid  chartreuse;
+	width: 300px;
+	
+}
+
+input,
+input[type="number"]
+{
+	background-color: chartreuse;
+	color:#000;
+}
+
